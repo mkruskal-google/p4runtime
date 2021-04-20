@@ -3193,6 +3193,8 @@ fields may be used to select and filter results:
 * `is_default_action`: If default (false), all non-default entries from the
   specified table will be considered. Otherwise, only the default entry will be
   considered.
+* `role`: If default (unset), all table entries will be considered. Otherwise,
+  table entries will be filtered based on the provided role value.
 
 For example, in order to read all entries from all tables from device 3, the
 client can use the following `ReadRequest` message.

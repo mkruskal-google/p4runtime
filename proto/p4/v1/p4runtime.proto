@@ -584,7 +584,8 @@ message MasterArbitrationUpdate {
 
 message Role {
   // Uniquely identifies this role.
-  uint64 id = 1;
+  uint64 id = 1 [deprecated=true];
+  string name = 3;
   // Describes the role configuration, i.e. what operations, P4 entities,
   // behaviors, etc. are in the scope of a given role. If config is not set
   // (default case), it implies all P4 objects and control behaviors are in
